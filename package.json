@@ -1,0 +1,25 @@
+{
+  "name": "blog-redirect",
+  "version": "0.1.0",
+  "description": "旧ブログのリダイレクト用",
+  "main": "index.js",
+  "scripts": {
+    "build": "node script.mjs",
+    "predeploy": "rm -rf dist && npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iMasanari/imasanari.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iMasanari/imasanari.github.io/issues"
+  },
+  "homepage": "https://github.com/iMasanari/imasanari.github.io#readme",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}

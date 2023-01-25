@@ -24,6 +24,6 @@ for (const path of pages) {
   const pagePath = `https://blog.imasanari.dev/${ path.replace(/^blog\//, 'posts/').replace(/index\.html$/, '') }`
   console.log(`${path} -> ${pagePath}`)
 
-  await mkdir(dirname(join('docs', path)), { recursive: true })
-  await writeFile(join('docs', path), template(pagePath))
+  await mkdir(dirname(join('dist', path)), { recursive: true })
+  await writeFile(join('dist', path), template(pagePath))
 }
