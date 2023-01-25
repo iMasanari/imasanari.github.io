@@ -9,7 +9,6 @@ const template = (path) =>
   <link rel="canonical" href="${path}">
   <script>location="${path}"</script>
   <meta http-equiv="refresh" content="0; url=${path}">
-  <meta name="robots" content="noindex">
   <h1>Redirecting&hellip;</h1>
   <a href="${path}">Click here if you are not redirected.</a>
 </html>
